@@ -19,43 +19,39 @@ from config import ASSET
 #
 #   1. Initialize
 #   2. Story memo
-#   3. Structure    - 1/8
+#   3. Structure    - 1/8: 1K
 #   4. Spec
-#   5. Plot         - 1/4
+#   5. Plot         - 1/4: 2K
 #   6. Scenes
-#   7. Conte        - 1/2
+#   7. Conte        - 1/2: 4K
 #   8. Layout
-#   9. Draft        - 1/1
+#   9. Draft        - 1/1: 8K
 #
 ################################################################
 
 # Constant
-TITLE = "作品タイトル"
-MAJOR, MINOR, MICRO = 0, 0, 1
-COPY = "コピィ"
-ONELINE = "一行説明"
-OUTLINE = "あらすじ"
-THEME = "テーマ"
-GENRE = "ジャンル"
-TARGET = "ターゲット（年代）"
-SIZE = "規定サイズ"
-CONTEST_INFO = "コンテスト情報"
-CAUTION = "注意事項"
-NOTE = "備考"
+TITLE = "ミスタールパンの忘れ物"
+MAJOR, MINOR, MICRO = 0, 1, 0
+COPY = "ヒーローと怪盗は遅れてやってくる"
+ONELINE = "約8000字の青春ミステリ短編。子どもの頃にある約束をした通称ルパンが、大人になった彼女の前に現れた"
+OUTLINE = "約8000字の青春ミステリ短編。"
+THEME = "子どもの頃の憧れ"
+GENRE = "ミステリ／青春"
+TARGET = "10-50years"
+SIZE = "8K"
+CONTEST_INFO = "妄想コンテスト「隠しごと」"
+CAUTION = ""
+NOTE = ""
 SITES = ["エブリスタ", "小説家になろう", "ノベルアッププラス", "カクヨム"]
-TAGS = ["ドラマ",]
-RELEASED = (1, 1, 2020)
+TAGS = ["ドラマ", "ミステリ", "青春"]
+RELEASED = (10, 11, 2020)
 
 
 # Episodes
-def ep_xxx(w: World):
-    return w.episode('episode_title',
-            outline="description")
-
-
 def ch_main(w: World):
     return w.chapter('main',
             )
+
 
 # Notes
 def writer_note(w: World):
@@ -64,6 +60,7 @@ def writer_note(w: World):
 
 def plot_note(w: World):
     return w.writer_note("プロットメモ",
+            "",
             )
 
 def chara_note(w: World):
@@ -76,10 +73,17 @@ def stage_note(w: World):
 
 def theme_note(w: World):
     return w.writer_note("テーマメモ",
+            "子どもの頃の無駄に無茶なことや悪そうなことをかっこいいと憧れた、その無垢な気持ち",
+            "大人になるとある程度子どもの頃の気持ちが薄れてしまう",
             )
 
 def motif_note(w: World):
     return w.writer_note("モチーフ",
+            "青春時代", "子ども時代",
+            "夢",
+            "ミステリ",
+            "忘れ物",
+            "怪盗", "盗む", "隠す", "宝物",
             )
 
 
