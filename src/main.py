@@ -48,6 +48,23 @@ RELEASED = (10, 11, 2020)
 
 
 # Episodes
+def ep_letter(w: World):
+    return w.episode("$lupinからの手紙",
+            w.plot_note(""),
+            # TODO
+            )
+
+
+def ep_mrlupin(w: World):
+    return w.episode("ミスタールパン",
+            )
+
+
+def ep_getback_mine(w: World):
+    return w.episode("自分を取り戻す",
+            )
+
+
 def ch_main(w: World):
     return w.chapter('main',
             w.plot_setup("小さい頃によく遊んでもらったミスタールパンから手紙が届く"),
@@ -62,18 +79,9 @@ def ch_main(w: World):
             w.plot_resolve("男の子の格好ばかりして遊んでいた彼女に女らしくなるように周囲が圧力をかけ、忘れ去ってしまった自分自身だった"),
             w.plot_resolve("その当時を取り戻し、隠していた本当の自分を彼氏に見せる"),
             w.plot_resolve("驚きながらも彼は彼の隠し事を教えてくれた、本当はドールハウスファンなんだと"),
-            "ミスタールパンからのメッセージが届く",
-            "彼氏がいる",
-            "$akiは彼氏に隠し事をしているっぽい",
-            "家の中での服装はずぼらだし、化粧もほぼしない",
-            "パズルや骨組みが好き",
-            "プラモデルをスケルトンにして悦に入っている",
-            "そんな過去をもっていたが、段ボール箱に捨てた",
-            "ミスタールパンは小さい頃に出会った",
-            "ミスタールパンが預けた忘れ物を取りに来ると予告",
-            "思い出せないまま",
-            "彼氏に普段着がばれる",
-            "彼氏にミスタールパンがばれる",
+            ep_letter(w),
+            ep_mrlupin(w),
+            ep_getback_mine(w),
             )
 
 
