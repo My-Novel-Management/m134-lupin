@@ -7,10 +7,13 @@ Story Config
 ASSET = {
         "PERSONS": (
             # (tag / name / full / age (birth) / job / call / info)
-            ('taro', '太郎', '', 17,(1,1), 'male', '学生'),
+            ("aki", "アキ", "ミサワ,アキ", 25,(1,1), "female", "会社員", "me:私"),
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
+            ("Yokohama", "横浜市", "Japan"),
+            ("Chiba", "千葉県", "Japan"),
+            ("Apart", "アキのアパート", "Chiba"),
             ),
         "DAYS": (
             # (tag / name / month / day / year)
@@ -23,6 +26,7 @@ ASSET = {
             ),
         "WORDS": (
             # (tag / name / cate / info)
+            ("IF", "ＩＦ"),
             ),
         "RUBIS": (
             # (origin / rubi / exclusions / always)
