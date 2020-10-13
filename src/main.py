@@ -50,11 +50,14 @@ RELEASED = (10, 11, 2020)
 # Episodes
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
+            w.plot_note("故郷の同窓会の手紙がくるが、故郷にはもう十年戻っていない"),
             w.plot_note("最近ものをよく失くす"),
+            w.plot_note("記憶がよく抜け落ちることに気づいた"),
             w.plot_note("彼から貰ったペアリングをなくしてしまい、困っていた"),
             w.plot_note("$akiは$keiと付き合って半年になる"),
             w.plot_note("ある日、$full_lupinと名乗る何者かから手紙が届いた"),
             # NOTE: ここ何かきっかけが必要だな
+            # 十年後の自分へ、の手紙が出てきたとか
             w.plot_note("かつて預けたあるものを取り戻しにくる、と書かれていた"),
             w.plot_note("家に戻るとそこに見知らぬ男がいた。彼は$lupinと名乗った"),
             )
@@ -62,13 +65,22 @@ def ep_letter(w: World):
 
 def ep_mrlupin(w: World):
     return w.episode("ミスタールパン",
+            w.plot_note("$keiはよく地元の話や家族の話をするが、それがちょっと息苦しい"),
+            w.plot_note("$lupinは毎晩のように現れては「思い出せ」と迫る"),
             w.plot_note("$akiは$lupinの存在を隠しながら$keiと付き合う"),
+            w.plot_note("$akiは$lupinに盗まれた「なにか」を取り戻すため、故郷に戻る"),
             )
 
 
 def ep_getback_mine(w: World):
     return w.episode("自分を取り戻す",
+            w.plot_note("ずっと戻りたくなかった故郷に戻ってきた"),
+            w.plot_note("故郷で立ち入り禁止になった廃棄された時計塔に登る"),
+            w.plot_note("その最上階に宝箱があった"),
+            w.plot_note("そこに$lupinが現れる"),
             w.plot_note("$akiは$lupinが自分がかつて生み出した$IFだったと思いだした"),
+            w.plot_note("宝箱の中には当時の$akiが憧れていた「男ものの衣装」があった"),
+            w.plot_note("封印した過去の自分。それは女らしさを脱ぎ捨てた本当の自分だった"),
             w.plot_note("ずっと自分自身の内側に隠していた「本当の好き」を思い出す"),
             w.plot_note("彼にそれを告白し、誤解をとくとともに自分を受け入れてもらう"),
             w.plot_note("自信がなかった自分の生き方から、本来の自分を取り戻して少しまっすぐ歩けるようになった"),
