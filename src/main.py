@@ -50,6 +50,7 @@ RELEASED = (10, 11, 2020)
 # Episodes
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
+            w.plot_note("記憶の物語である"),
             w.plot_note("故郷の同窓会の手紙がくるが、故郷にはもう十年戻っていない"),
             w.plot_note("最近ものをよく失くす"),
             w.plot_note("記憶がよく抜け落ちることに気づいた"),
@@ -67,7 +68,15 @@ def ep_mrlupin(w: World):
     return w.episode("ミスタールパン",
             w.plot_note("$keiはよく地元の話や家族の話をするが、それがちょっと息苦しい"),
             w.plot_note("$lupinは毎晩のように現れては「思い出せ」と迫る"),
-            w.plot_note("$akiは$lupinの存在を隠しながら$keiと付き合う"),
+            w.plot_note("$akiは研究室でメモリの研究をしていた"),
+            w.plot_note("$keiに仕事の話をするけれど、彼は男の割にそういうものに興味を持たない"),
+            w.plot_note("彼はコンピュータも苦手だという"),
+            w.plot_note("デート先も女性なら喜ぶような場所を選ぶし、一緒に行くのはおしゃれなカフェやスイーツの美味しい店だ"),
+            w.plot_note("本当ならうれしいはずなのに、どこか息苦しさを感じていた"),
+            w.plot_note("$lupinはそんな自分のことを何故かよく理解していた"),
+            w.plot_note("ストーカーなのにいつしか$lupinに心を惹かれてしまう"),
+            w.plot_note("けれど$lupinはある日、$akiの前から姿を消してしまう"),
+            w.plot_note("$akiのテーブルの上には何かの鍵が置かれていた"),
             w.plot_note("$akiは$lupinに盗まれた「なにか」を取り戻すため、故郷に戻る"),
             )
 
@@ -192,6 +201,9 @@ def motif_note(w: World):
             "待っているだけ",
             "時計", "時間",
             "戻らないもの",
+            # recently item
+            "記憶", "メモリ", "量子コンピュータ",
+            "分子メモリ",
             )
 
 
