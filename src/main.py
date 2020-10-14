@@ -50,6 +50,10 @@ RELEASED = (10, 11, 2020)
 # Episodes
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
+            "映画館：MI最新作を見ている",
+            "スイーツ店：スイーツを食べながら恋人として",
+            "自室：ルパンの手紙",
+            "自室：ルパン登場",
             w.plot_note("記憶の物語である"),
             w.plot_note("故郷の同窓会の手紙がくるが、故郷にはもう十年戻っていない"),
             w.plot_note("最近ものをよく失くす"),
@@ -66,6 +70,7 @@ def ep_letter(w: World):
 
 def ep_mrlupin(w: World):
     return w.episode("ミスタールパン",
+            "オフィス：記憶・メモリの話",
             w.plot_note("$keiはよく地元の話や家族の話をするが、それがちょっと息苦しい"),
             w.plot_note("$lupinは毎晩のように現れては「思い出せ」と迫る"),
             w.plot_note("$akiは研究室でメモリの研究をしていた"),
@@ -83,6 +88,10 @@ def ep_mrlupin(w: World):
 
 def ep_getback_mine(w: World):
     return w.episode("自分を取り戻す",
+            "地元：しかしそこに記憶の中の時計塔は存在していなかった",
+            "駄菓子屋：小学生時代の同級生との再会",
+            "秘密基地：宝箱（タイムカプセル）",
+            "同：ルパンの真実",
             w.plot_note("ずっと戻りたくなかった故郷に戻ってきた"),
             w.plot_note("故郷で立ち入り禁止になった廃棄された時計塔に登る"),
             w.plot_note("その最上階に宝箱があった"),
