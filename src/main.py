@@ -12,7 +12,7 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-# from scenes import xxx
+from scenes import Theater
 
 
 ################################################################
@@ -50,7 +50,7 @@ RELEASED = (10, 11, 2020)
 # Episodes
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
-            "映画館：MI最新作を見ている",
+            Theater.couple_date(w),
             "スイーツ店：スイーツを食べながら恋人として",
             "自宅：ルパンの手紙",
             "自宅：ルパン登場",
