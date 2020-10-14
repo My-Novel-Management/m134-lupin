@@ -15,7 +15,18 @@ ASSET = {
             # (tag / name / parent / (geometry) / info)
             ("Yokohama", "横浜市", "Japan"),
             ("Chiba", "千葉県", "Japan"),
-            ("Apart", "アキのアパート", "Chiba"),
+            ("Apart", "アキのアパート", "Tokyo"),
+            ("Theater", "映画館", "Tokyo"),
+            ("Cafe", "喫茶店", "Tokyo"),
+            ("Aquarium", "水族館", "Tokyo"),
+            ("Station", "駅", "Chiba"),
+            ("InTrain", "電車車内", "Japan"),
+            ("InBus", "バス車内", "Chiba"),
+            ("ParentHome", "アキの実家", "Chiba"),
+            ("Dagashi", "駄菓子屋", "Chiba"),
+            ("SecretBase", "秘密基地", "Chiba"),
+            ("Street", "路地", "Japan"),
+            ("School", "小学校", "Chiba"),
             ),
         "DAYS": (
             # (tag / name / month / day / year)
