@@ -12,6 +12,8 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
+from scenes import Apart
+from scenes import Cafe
 from scenes import Theater
 
 
@@ -51,9 +53,8 @@ RELEASED = (10, 11, 2020)
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
             Theater.couple_date(w),
-            "スイーツ店：スイーツを食べながら恋人として",
-            "自宅：ルパンの手紙",
-            "自宅：ルパン登場",
+            Cafe.couple_talk(w),
+            Apart.lupin_letter(w),
             w.plot_note("記憶の物語である"),
             w.plot_note("故郷の同窓会の手紙がくるが、故郷にはもう十年戻っていない"),
             w.plot_note("最近ものをよく失くす"),

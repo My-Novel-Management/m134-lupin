@@ -10,7 +10,11 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def couple_talk(w: World):
+    return w.scene('恋人の会話',
+            w.plot_note("映画を見終わり、その感想を語り合う"),
+            w.plot_note("けれど$akiはそれよりずっと気がかりなことがあった"),
+            w.plot_note("彼から貰ったはずのペアリングがどこかにいってしまって、言い出せない"),
+            w.plot_note("彼への隠し事があったのだ"),
             )
 
