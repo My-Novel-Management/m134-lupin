@@ -12,7 +12,15 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-# from scenes import xxx
+from scenes import Apart
+from scenes import BookShop
+from scenes import Cafe
+from scenes import DagashiShop
+from scenes import ParentHome
+from scenes import Park
+from scenes import SecretBase
+from scenes import Station
+from scenes import Theater
 
 
 ################################################################
@@ -50,6 +58,9 @@ RELEASED = (10, 11, 2020)
 # Episodes
 def ep_letter(w: World):
     return w.episode("$lupinからの手紙",
+            Theater.couple_date(w),
+            Cafe.couple_talk(w),
+            Apart.lupin_letter(w),
             w.plot_note("記憶の物語である"),
             w.plot_note("故郷の同窓会の手紙がくるが、故郷にはもう十年戻っていない"),
             w.plot_note("最近ものをよく失くす"),
@@ -66,6 +77,13 @@ def ep_letter(w: World):
 
 def ep_mrlupin(w: World):
     return w.episode("ミスタールパン",
+            BookShop.working(w),
+            "オフィス：記憶・メモリの話",
+            "自宅：ルパンとの昔話",
+            "水族館：デート。すれ違う会話",
+            Station.back_home(w),
+            ParentHome.lost_clocktower(w),
+            Park.nothing_tower(w),
             w.plot_note("$keiはよく地元の話や家族の話をするが、それがちょっと息苦しい"),
             w.plot_note("$lupinは毎晩のように現れては「思い出せ」と迫る"),
             w.plot_note("$akiは研究室でメモリの研究をしていた"),
@@ -83,6 +101,10 @@ def ep_mrlupin(w: World):
 
 def ep_getback_mine(w: World):
     return w.episode("自分を取り戻す",
+            DagashiShop.nostalgic_friend(w),
+            SecretBase.my_treasure(w),
+            SecretBase.old_talk(w),
+            SecretBase.lost_property(w),
             w.plot_note("ずっと戻りたくなかった故郷に戻ってきた"),
             w.plot_note("故郷で立ち入り禁止になった廃棄された時計塔に登る"),
             w.plot_note("その最上階に宝箱があった"),

@@ -10,7 +10,7 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
+def working(w: World):
     return w.scene('__scene__',
             )
 
