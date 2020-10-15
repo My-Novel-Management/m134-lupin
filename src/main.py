@@ -14,6 +14,11 @@ from config import ASSET
 # import scenes
 from scenes import Apart
 from scenes import Cafe
+from scenes import DagashiShop
+from scenes import ParentHome
+from scenes import Park
+from scenes import SecretBase
+from scenes import Station
 from scenes import Theater
 
 
@@ -92,10 +97,11 @@ def ep_mrlupin(w: World):
 
 def ep_getback_mine(w: World):
     return w.episode("自分を取り戻す",
-            "地元：しかしそこに記憶の中の時計塔は存在していなかった",
-            "駄菓子屋：小学生時代の同級生との再会",
-            "秘密基地：宝箱（タイムカプセル）",
-            "同：ルパンの真実",
+            Station.back_home(w),
+            ParentHome.lost_clocktower(w),
+            Park.nothing_tower(w),
+            DagashiShop.nostalgic_friend(w),
+            SecretBase.my_treasure(w),
             w.plot_note("ずっと戻りたくなかった故郷に戻ってきた"),
             w.plot_note("故郷で立ち入り禁止になった廃棄された時計塔に登る"),
             w.plot_note("その最上階に宝箱があった"),

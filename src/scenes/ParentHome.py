@@ -10,7 +10,10 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def lost_clocktower(w: World):
+    return w.scene('失われた時計塔',
+            w.plot_note("急に戻ってきたので小言を言われる"),
+            w.plot_note("$akiは両親に古い時計塔のことを尋ねる"),
+            w.plot_note("時計塔なんてないと言われてしまう"),
             )
 
