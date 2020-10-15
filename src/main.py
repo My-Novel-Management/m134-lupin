@@ -13,6 +13,7 @@ from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
 from scenes import Apart
+from scenes import BookShop
 from scenes import Cafe
 from scenes import DagashiShop
 from scenes import ParentHome
@@ -76,6 +77,7 @@ def ep_letter(w: World):
 
 def ep_mrlupin(w: World):
     return w.episode("ミスタールパン",
+            BookShop.working(w),
             "オフィス：記憶・メモリの話",
             "自宅：ルパンとの昔話",
             "水族館：デート。すれ違う会話",

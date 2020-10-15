@@ -17,6 +17,7 @@ ASSET = {
             ("Chiba", "千葉県", "Japan"),
             ("Apart", "アキのアパート", "Tokyo"),
             ("Office", "オフィス", "Tokyo"),
+            ("BookShop", "本屋", "Tokyo"),
             ("Theater", "映画館", "Tokyo"),
             ("Cafe", "喫茶店", "Tokyo"),
             ("Aquarium", "水族館", "Tokyo"),
